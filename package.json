@@ -6,7 +6,6 @@
     "eslint": "^9.0.0"
   },
   "scripts": {
-    "typecheck": "tsc --noEmit",
     "test": "vitest run"
   }
 }
