@@ -13,9 +13,4 @@ jobs:
       - run: npm ci
       - run: npm run lint --if-present
       - run: npm run typecheck --if-present
-      - run: npm test -- --ci --coverage --coverageReporters=text-summary
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: coverage
-          path: coverage
+      - run: npm test
